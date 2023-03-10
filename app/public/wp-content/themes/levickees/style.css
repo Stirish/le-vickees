@@ -7,9 +7,14 @@ body {
   margin: auto;
   border: 2px solid #FFF;
   border-radius: 20px;
-  background-color: #070707;
+  background: #070707;
   color: #FFF;
   font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .header--btn--purple {
@@ -139,6 +144,22 @@ body {
   }
 }
 
+footer {
+  text-align: center;
+}
+
+.legals {
+  width: 100%;
+}
+
+.menu-item {
+  list-style: none;
+}
+.menu-item:hover a {
+  text-decoration: underline;
+  color: white;
+}
+
 .all-cards {
   display: flex;
   flex-direction: column;
@@ -225,6 +246,10 @@ body {
 }
 .supplement-card--sauces {
   padding: 0px 0px 30px 30px;
+}
+
+.page-content {
+  padding: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
