@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /*pdf$
+Sitemap: https://levickees.fr/sitemap_index.xml
