@@ -1,0 +1,230 @@
+/*
+Theme Name: Le Vickee's
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  max-width: 1440px;
+  margin: auto;
+  border: 2px solid #FFF;
+  border-radius: 20px;
+  background-color: #070707;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header--btn--purple {
+  background-color: #800080;
+  color: #FFFFFF;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-weight: 700;
+}
+@media all and (max-width: 766px) {
+  .header--btn--purple {
+    width: 339spx;
+  }
+}
+
+.header--btn--yellow {
+  border: 2px solid #E4B743;
+  background-color: #070707;
+  color: #E4B743;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-weight: 700;
+}
+
+.header {
+  height: 100vh;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 992px) {
+  .header {
+    height: auto;
+    margin: 100px 0px;
+  }
+}
+@media all and (max-width: 766px) {
+  .header {
+    height: 100vh;
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+  }
+}
+.header .container {
+  height: 100%;
+}
+.header--content {
+  height: inherit;
+}
+.header--content--items {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+@media all and (max-width: 992px) {
+  .header--content--items {
+    display: block;
+  }
+}
+@media all and (max-width: 766px) {
+  .header--content--items {
+    display: flex;
+  }
+}
+.header--content--items--title {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (max-width: 992px) {
+  .header--content--items--title {
+    align-items: center;
+  }
+}
+.header--content--items--title__title {
+  font-family: "Lemonada", cursive;
+  font-weight: 700;
+  font-size: 4.6rem;
+  background: rgb(91, 0, 110);
+  background: linear-gradient(90deg, rgb(91, 0, 110) 0%, rgb(128, 35, 81) 15%, rgb(130, 37, 79) 39%, rgb(255, 214, 0) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@media all and (max-width: 766px) {
+  .header--content--items--title__title {
+    font-size: 2.9rem;
+    margin-bottom: 30px;
+  }
+}
+.header--content--items--title__subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+@media all and (max-width: 766px) {
+  .header--content--items--title__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+}
+.header--content--image {
+  height: inherit;
+}
+.header--content img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+@media all and (max-width: 992px) {
+  .header--content img {
+    display: none;
+  }
+}
+@media all and (max-width: 766px) {
+  .header--content img {
+    display: none;
+  }
+}
+@media all and (max-width: 992px) {
+  .header--btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media all and (max-width: 766px) {
+  .header--btn {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+.all-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-card {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media all and (max-width: 766px) {
+  .food-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.food-card--category {
+  font-family: "Lemonada", cursive;
+}
+.food-card--category--title {
+  margin: 30px;
+  font-weight: 700;
+}
+@media all and (max-width: 766px) {
+  .food-card--category--title {
+    font-size: 1.7rem;
+  }
+}
+.food-card--menu {
+  background-color: #070707;
+  border-radius: 20px;
+  margin: 30px;
+}
+.food-card--menu--all-info {
+  padding: 30px 30px;
+}
+@media all and (max-width: 992px) {
+  .food-card--menu--all-info {
+    padding: 30px 10px;
+  }
+}
+@media all and (max-width: 766px) {
+  .food-card--menu--all-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 30px 12px;
+  }
+}
+.food-card--menu--all-info--info {
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 766px) {
+  .food-card--menu--all-info--info {
+    align-items: center;
+    font-size: 1.1rem;
+  }
+}
+.food-card--menu--all-info--meats {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.supplement-card {
+  border: 2px solid #E4B743;
+  border-radius: 20px;
+  color: #E4B743;
+  font-weight: 700;
+  margin-bottom: 150px;
+}
+.supplement-card--category {
+  font-family: "Lemonada", cursive;
+}
+.supplement-card--category--title {
+  margin: 30px 30px 10px 30px;
+  font-weight: 700;
+}
+.supplement-card--sauces {
+  padding: 0px 0px 30px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

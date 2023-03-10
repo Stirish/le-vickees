@@ -1,0 +1,105 @@
+.header {
+    height: 100vh;
+    margin-bottom: 20px;
+
+    @include tablet {
+        height: auto;
+        margin: 100px 0px;
+    }
+
+    @include mobile {
+        height: 100vh;
+        margin: 0px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    &--content {
+        height: inherit;       
+
+        &--items {
+            height: inherit;
+            display: flex;
+            align-items: center;
+
+            @include tablet {
+                display: block;
+            }
+
+            @include mobile {
+                display: flex;
+            }
+
+            &--title {
+                display: flex;
+                flex-direction: column;
+
+                @include tablet {
+                    align-items: center;    
+                }
+                
+        
+                &__title {
+                    font-family: 'Lemonada', cursive;
+                    font-weight: 700;
+                    font-size: 4.6rem;
+                    background: rgb(91,0,110);
+                    background: linear-gradient(90deg, rgba(91,0,110,1) 0%, rgba(128,35,81,1) 15%, rgba(130,37,79,1) 39%, rgba(255,214,0,1) 100%);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+
+                    @include mobile {
+                        font-size: 2.9rem;
+                        margin-bottom: 30px;
+                    }
+                }
+        
+                &__subtitle {
+                    font-size: 1.4rem;
+                    margin-bottom: 30px;
+
+                    @include mobile {
+                        font-size: 1.2rem;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        &--image {
+            height: inherit;
+        }
+
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+    &--btn {
+
+        @include tablet {
+            display: flex;
+            justify-content: center;    
+        }
+
+        @include mobile {
+            flex-wrap: wrap;
+            gap: 15px
+        }
+    }
+}

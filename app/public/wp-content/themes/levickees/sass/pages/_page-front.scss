@@ -1,0 +1,92 @@
+.all-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-card {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &--category {
+        font-family: 'Lemonada', cursive;
+
+        &--title {
+            margin: 30px;
+            font-weight: 700;
+            
+            @include mobile {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    &--menu {
+        background-color: #070707;
+        border-radius: 20px;
+        margin: 30px;
+
+        &--all-info {
+            padding: 30px 30px;
+
+            @include tablet {
+                padding: 30px 10px;
+            }
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                padding: 30px 12px;
+            }
+
+
+            &--info {
+                display: flex;
+                justify-content: space-between;
+
+                @include mobile {
+                    align-items: center;
+                    font-size: 1.1rem;
+                }
+            }
+
+            &--meats {
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.supplement-card {
+    border: 2px solid #E4B743;
+    border-radius: 20px;
+    color: #E4B743;
+    font-weight: 700;
+    margin-bottom: 150px;
+
+    &--category {
+        font-family: 'Lemonada', cursive;
+
+        &--title {
+            margin: 30px 30px 10px 30px;
+            font-weight: 700;
+        }
+    }
+
+    &--sauces {
+        padding: 0px 0px 30px 30px;
+    }
+}
