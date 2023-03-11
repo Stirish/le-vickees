@@ -1,17 +1,22 @@
 footer {
-    
-    text-align: center;
+  text-align: center;
 }
-.legals {
-    width: 100%;
-}
-.menu-item {
-    list-style: none;
 
-    &:hover {
+.legals {
+  width: 100%;
+    
+  .menu {
+    padding: 0;
+
+    .menu-item {
+      list-style: none;
+        
+      &:hover {
         a {
-            text-decoration: underline;
-            color: white;
+          text-decoration: underline;
+          color: white;
         }
+      }
     }
+  }
 }

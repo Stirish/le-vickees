@@ -83,10 +83,22 @@
         &--title {
             margin: 30px 30px 10px 30px;
             font-weight: 700;
+
+            @include mobile {
+                text-align: center;
+                margin: 20px 30px;
+            }
         }
     }
 
     &--sauces {
         padding: 0px 0px 30px 30px;
+
+        @include mobile {
+            display: flex;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 20px;
+        }
     }
 }

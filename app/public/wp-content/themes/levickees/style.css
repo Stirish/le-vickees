@@ -23,6 +23,7 @@ a {
   border-radius: 30px;
   padding: 15px 25px;
   font-weight: 700;
+  border: 2px solid transparent;
 }
 @media all and (max-width: 766px) {
   .header--btn--purple {
@@ -151,11 +152,13 @@ footer {
 .legals {
   width: 100%;
 }
-
-.menu-item {
+.legals .menu {
+  padding: 0;
+}
+.legals .menu .menu-item {
   list-style: none;
 }
-.menu-item:hover a {
+.legals .menu .menu-item:hover a {
   text-decoration: underline;
   color: white;
 }
@@ -244,8 +247,22 @@ footer {
   margin: 30px 30px 10px 30px;
   font-weight: 700;
 }
+@media all and (max-width: 766px) {
+  .supplement-card--category--title {
+    text-align: center;
+    margin: 20px 30px;
+  }
+}
 .supplement-card--sauces {
   padding: 0px 0px 30px 30px;
+}
+@media all and (max-width: 766px) {
+  .supplement-card--sauces {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .page-content {
